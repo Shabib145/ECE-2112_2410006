@@ -1,4 +1,3 @@
-## ECE-1204_2410006_Lab Reports
 <div align="center">
   
 _**Heaven’s Light is Our Guide**_
@@ -47,8 +46,8 @@ _**Heaven’s Light is Our Guide**_
 
 ## INDEX:
 
-| Lab No. | Title | Link | codeforce |
-| :---: | :---: | :---: | :---: |
+| Lab No. | Title | Link |
+| :---: | :---: | :---: | 
 
 </div>
 

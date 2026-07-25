@@ -8,9 +8,9 @@ Build an OR gate using only NOR gates.
 ### Theory
 A NOR gate gives the opposite of OR:
 
-\[
+$$
 A \downarrow B = \overline{A+B}
-\]
+$$
 
 If the NOR output is connected to both inputs of another NOR gate, it is inverted again:
 

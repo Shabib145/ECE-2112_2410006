@@ -35,9 +35,7 @@ $$
 2. Connect the first NOR output to both inputs of the second NOR gate.
 3. The output of the second NOR gate is the OR result.
 
-![First NOR gate](./image.png)
-
-![NOR gate used as an inverter](./image-1.png)
+ 
 
 ### Output Table
 
@@ -48,9 +46,8 @@ $$
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
 
-![Circuit test](./image-2.png)
 
-![Circuit output](./image-3.png)
+![Circuit output](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-26%20000154.png?raw=true)
 
 ### Conclusion
 

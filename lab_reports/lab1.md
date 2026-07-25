@@ -285,33 +285,32 @@ To design and test a one-bit full adder.
 
 ### Theory
 
-A full adder adds three binary inputs:
+A full adder is a combinational logic circuit that adds three binary inputs:
 
-- `A` — first bit
-- `B` — second bit
+- `A` — first input bit
+- `B` — second input bit
 - `Cin` — carry input
 
-It produces:
+The circuit produces two outputs:
 
-- `Sum` — addition result
+- `Sum` — sum output
 - `Cout` — carry output
 
-$$
-Sum = A \oplus B \oplus Cin
-$$
+**Logic Expressions**
 
-$$
-Cout = AB + Cin(A \oplus B)
-$$
-
-A full adder can be made with two half adders and one OR gate.
+```
+Sum = (A ⊕ B) ⊕ Cin
+Cout = (A · B) + [Cin · (A ⊕ B)]
+```
 
 ### Circuit Steps
 
-1. Connect `A` and `B` to the first half adder.
-2. Connect the first sum output and `Cin` to the second half adder.
-3. Connect both carry outputs to an OR gate.
-4. Test every input combination.
+1. Connect inputs `A` and `B` to the first XOR gate to generate `A ⊕ B`.
+2. Connect the output of the first XOR gate and `Cin` to the second XOR gate to obtain the **Sum** output.
+3. Connect `A` and `B` to an AND gate to generate the first carry term.
+4. Connect `(A ⊕ B)` and `Cin` to another AND gate to generate the second carry term.
+5. Connect the outputs of both AND gates to an OR gate to obtain the **Carry (Cout)** output.
+6. Apply all possible input combinations and verify the Sum and Carry outputs with the truth table.
 
 
 ### Truth Table
@@ -327,7 +326,7 @@ A full adder can be made with two half adders and one OR gate.
 | 1 | 1 | 0 | 0 | 1 |
 | 1 | 1 | 1 | 1 | 1 |
 
-![Test result]([./image-26.png](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-26%20000154.png?raw=true)
+![Test result](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-26%20000154.png?raw=true)
 
 ### Conclusion
 

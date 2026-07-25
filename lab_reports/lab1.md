@@ -201,10 +201,6 @@ $$
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
-![Test result](./image-14.png)
-
-![Test result](./image-15.png)
-
 ### Conclusion
 
 An AND gate was implemented using two NAND gates.
@@ -230,7 +226,7 @@ $$
 1. Connect input `A` to both NOR inputs.
 2. Take the NOR output as `Y`.
 
-![NOR inverter circuit](./image-16.png)
+![NOR inverter circuit](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/notor.png?raw=true)
 
 ### Output Table
 
@@ -239,7 +235,7 @@ $$
 | 0 | 1 |
 | 1 | 0 |
 
-![Test result](./image-17.png)
+ 
 
 ### Conclusion
 
@@ -266,7 +262,7 @@ $$
 1. Connect input `A` to both NAND inputs.
 2. Observe the output.
 
-![NAND inverter circuit](./image-18.png)
+![NAND inverter circuit](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/notand.png?raw=true)
 
 ### Output Table
 
@@ -274,8 +270,6 @@ $$
 |---|-----------|
 | 0 | 1 |
 | 1 | 0 |
-
-![Test result](./image-19.png)
 
 ### Conclusion
 

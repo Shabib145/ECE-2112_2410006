@@ -94,20 +94,16 @@ $$
 3. Connect both inverted signals to a third NAND gate.
 4. The final output is `A OR B`.
 
-![Final NAND connection](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-25%20235918.png?raw=true)
+![Final NAND connection](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-25%20235720.png?raw=true)
 
 ### Output Table
 
 | A | B | Y = A OR B |
 |---|---|------------|
-| 0 | 0 | 0 |
+| 0 | 0 | 0 |                       
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
-
-![Test result](./image-6.png)
-
-![Test result](./image-7.png)
 
 ### Conclusion
 
@@ -147,7 +143,7 @@ $$
 
  
 
-![Final NOR connection](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-25%20235720.png?raw=true)
+![Final NOR connection](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-25%20235918.png?raw=true)
 
 ### Output Table
 

@@ -36,6 +36,7 @@ $$
 3. The output of the second NOR gate is the OR result.
 
  
+![Circuit output](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-26%20000106.png?raw=true)
 
 ### Output Table
 
@@ -47,7 +48,7 @@ $$
 | 1 | 1 | 1 |
 
 
-![Circuit output]()
+
 
 ### Conclusion
 
@@ -187,9 +188,9 @@ $$
 2. Connect its output to both inputs of the second NAND gate.
 3. Take the second gate output as the AND result.
 
-![First NAND gate](./image-12.png)
+ 
 
-![NAND gate used as an inverter](./image-13.png)
+![NAND gate used as an inverter](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-26%20000006.png?raw=true)
 
 ### Output Table
 

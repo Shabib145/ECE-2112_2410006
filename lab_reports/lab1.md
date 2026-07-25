@@ -1,5 +1,6 @@
 # Lab 1: Introduction to Digital Logic
-
+## Instalation of Logisim evaluation :
+![](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-23%20163200.png?raw=true)
 ## Experiment 1: OR Gate Using NOR Gates
 
 ### Objective
@@ -359,9 +360,9 @@ For values from `0` to `9`, one BCD digit is enough. Values from `10` to `15` ne
 2. Connect the BCD outputs to the display or output indicators.
 3. Change the binary input value and observe the decimal result.
 
-![Binary input circuit](./image-27.png)
+ 
 
-![BCD output circuit](./image-28.png)
+![BCD output circuit](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/bcd.png?raw=true)
 
 ### Example Results
 
@@ -373,11 +374,6 @@ For values from `0` to `9`, one BCD digit is enough. Values from `10` to `15` ne
 | `1010` | 10 | `0001 0000` |
 | `1111` | 15 | `0001 0101` |
 
-![Test result](./image-29.png)
-
-![Test result](./image-30.png)
-
-![Test result](./image-31.png)
 
 ### Conclusion
 

@@ -12,8 +12,8 @@ _**Heaven’s Light is Our Guide**_
   ## **Rajshahi University of Engineering and Technology** <br> 
   ### **Department of Electrical & Computer Engineering**
   ### **Lab Reports**<br>
-  **Course Name:** Object Oriented Programming Sessional <br>
-  **Course Code:** ECE 1204
+  **Course Name:** Digital Techniques Sessional <br>
+  **Course Code:** ECE 2112
 </div>
 <br>
 <div align="center">

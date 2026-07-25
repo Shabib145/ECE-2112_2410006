@@ -1,22 +1,24 @@
-# Lab 1: Digital Logic Basics
+# Lab 1: Introduction to Digital Logic
 
-## Experiment 1: OR Gate from NOR Gates
+## Experiment 1: OR Gate Using NOR Gates
 
-### Aim
-Build an OR gate using only NOR gates.
+### Objective
+
+To implement an OR gate using only NOR gates.
 
 ### Theory
-A NOR gate gives the opposite of OR:
+
+A NOR gate produces the inverse of an OR operation:
 
 $$
 A \downarrow B = \overline{A+B}
 $$
 
-If the NOR output is connected to both inputs of another NOR gate, it is inverted again:
+Using two NOR gates, the OR output becomes:
 
-\[
-Y=(A \downarrow B)\downarrow(A \downarrow B)=A+B
-\]
+$$
+Y = (A \downarrow B) \downarrow (A \downarrow B) = A+B
+$$
 
 ### NOR Gate Truth Table
 
@@ -27,17 +29,17 @@ Y=(A \downarrow B)\downarrow(A \downarrow B)=A+B
 | 1 | 0 | 0 |
 | 1 | 1 | 0 |
 
-### Procedure
+### Circuit Steps
+
 1. Connect `A` and `B` to the first NOR gate.
-2. Connect its output to both inputs of the second NOR gate.
-3. Take the second gate output as `Y`.
-4. Test all input combinations.
+2. Connect the first NOR output to both inputs of the second NOR gate.
+3. The output of the second NOR gate is the OR result.
 
-![First NOR gate](image.png)
+![First NOR gate](./image.png)
 
-![NOR gate used as inverter](image-1.png)
+![NOR gate used as an inverter](./image-1.png)
 
-### Result
+### Output Table
 
 | A | B | Y = A OR B |
 |---|---|------------|
@@ -46,34 +48,35 @@ Y=(A \downarrow B)\downarrow(A \downarrow B)=A+B
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
 
-![Circuit test](image-2.png)
+![Circuit test](./image-2.png)
 
-![Circuit output](image-3.png)
+![Circuit output](./image-3.png)
 
 ### Conclusion
-An OR gate was created successfully using two NOR gates.
+
+An OR gate was implemented successfully with two NOR gates.
 
 ---
 
-## Experiment 2: OR Gate from NAND Gates
+## Experiment 2: OR Gate Using NAND Gates
 
-### Aim
-Build an OR gate using only NAND gates.
+### Objective
+
+To implement an OR gate using only NAND gates.
 
 ### Theory
-A NAND gate can work as a NOT gate when both inputs are the same:
 
-\[
-\overline{A}=A \text{ NAND } A
-\]
+A NAND gate can act as a NOT gate when both of its inputs are connected together:
 
-Using De Morgan’s law:
+$$
+\overline{A} = A \text{ NAND } A
+$$
 
-\[
-A+B=\overline{\overline{A}\cdot\overline{B}}
-\]
+By De Morgan's law:
 
-So, two NAND gates invert `A` and `B`, and a third NAND gate produces the OR output.
+$$
+A+B = \overline{\overline{A} \cdot \overline{B}}
+$$
 
 ### NAND Gate Truth Table
 
@@ -84,17 +87,18 @@ So, two NAND gates invert `A` and `B`, and a third NAND gate produces the OR out
 | 1 | 0 | 1 |
 | 1 | 1 | 0 |
 
-### Procedure
-1. Use one NAND gate for `NOT A`.
-2. Use another NAND gate for `NOT B`.
-3. Connect both inverted outputs to a third NAND gate.
-4. Check the output for every input pair.
+### Circuit Steps
 
-![Input inversion](image-4.png)
+1. Use one NAND gate to invert `A`.
+2. Use another NAND gate to invert `B`.
+3. Connect both inverted signals to a third NAND gate.
+4. The final output is `A OR B`.
 
-![Final NAND connection](image-5.png)
+![Input inversion](./image-4.png)
 
-### Result
+![Final NAND connection](./image-5.png)
+
+### Output Table
 
 | A | B | Y = A OR B |
 |---|---|------------|
@@ -103,48 +107,51 @@ So, two NAND gates invert `A` and `B`, and a third NAND gate produces the OR out
 | 1 | 0 | 1 |
 | 1 | 1 | 1 |
 
-![Test result](image-6.png)
+![Test result](./image-6.png)
 
-![Test result](image-7.png)
+![Test result](./image-7.png)
 
 ### Conclusion
-The OR function was obtained using three NAND gates.
+
+The OR operation was produced using three NAND gates.
 
 ---
 
-## Experiment 3: AND Gate from NOR Gates
+## Experiment 3: AND Gate Using NOR Gates
 
-### Aim
-Build an AND gate using only NOR gates.
+### Objective
+
+To implement an AND gate using only NOR gates.
 
 ### Theory
-First, invert both inputs using NOR gates:
 
-\[
-\overline{A}=A \downarrow A
-\]
+First, invert both inputs:
 
-\[
-\overline{B}=B \downarrow B
-\]
+$$
+\overline{A} = A \downarrow A
+$$
 
-Then apply NOR:
+$$
+\overline{B} = B \downarrow B
+$$
 
-\[
-Y=\overline{\overline{A}+\overline{B}}=A \cdot B
-\]
+Then connect them to another NOR gate:
 
-### Procedure
+$$
+Y = \overline{\overline{A}+\overline{B}} = A \cdot B
+$$
+
+### Circuit Steps
+
 1. Connect `A` to both inputs of the first NOR gate.
 2. Connect `B` to both inputs of the second NOR gate.
-3. Connect the two outputs to a third NOR gate.
-4. Test the circuit.
+3. Connect both outputs to the last NOR gate.
 
-![Input inversion using NOR](image-8.png)
+![Input inversion using NOR](./image-8.png)
 
-![Final NOR connection](image-9.png)
+![Final NOR connection](./image-9.png)
 
-### Result
+### Output Table
 
 | A | B | Y = A AND B |
 |---|---|-------------|
@@ -153,43 +160,47 @@ Y=\overline{\overline{A}+\overline{B}}=A \cdot B
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
-![Test result](image-10.png)
+![Test result](./image-10.png)
 
-![Test result](image-11.png)
+![Test result](./image-11.png)
 
 ### Conclusion
-An AND gate was implemented using three NOR gates.
+
+An AND gate was constructed with three NOR gates.
 
 ---
 
-## Experiment 4: AND Gate from NAND Gates
+## Experiment 4: AND Gate Using NAND Gates
 
-### Aim
-Build an AND gate using only NAND gates.
+### Objective
+
+To implement an AND gate using only NAND gates.
 
 ### Theory
+
 The first NAND gate gives:
 
-\[
-X=\overline{A \cdot B}
-\]
+$$
+X = \overline{A \cdot B}
+$$
 
-A second NAND gate inverts `X`:
+The second NAND gate inverts `X`:
 
-\[
-Y=X \text{ NAND } X=A \cdot B
-\]
+$$
+Y = X \text{ NAND } X = A \cdot B
+$$
 
-### Procedure
+### Circuit Steps
+
 1. Connect `A` and `B` to the first NAND gate.
 2. Connect its output to both inputs of the second NAND gate.
-3. Observe the final output.
+3. Take the second gate output as the AND result.
 
-![First NAND gate](image-12.png)
+![First NAND gate](./image-12.png)
 
-![NAND used as inverter](image-13.png)
+![NAND gate used as an inverter](./image-13.png)
 
-### Result
+### Output Table
 
 | A | B | Y = A AND B |
 |---|---|-------------|
@@ -198,191 +209,205 @@ Y=X \text{ NAND } X=A \cdot B
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
 
-![Test result](image-14.png)
+![Test result](./image-14.png)
 
-![Test result](image-15.png)
+![Test result](./image-15.png)
 
 ### Conclusion
-Two NAND gates were enough to produce an AND gate.
+
+An AND gate was implemented using two NAND gates.
 
 ---
 
-## Experiment 5: NOT Gate from NOR Gates
+## Experiment 5: NOT Gate Using NOR Gates
 
-### Aim
-Create a NOT gate using a NOR gate.
+### Objective
+
+To implement a NOT gate using a NOR gate.
 
 ### Theory
-When the same signal is given to both inputs of a NOR gate:
 
-\[
-Y=A \downarrow A=\overline{A}
-\]
+When both NOR inputs receive the same signal:
 
-### Procedure
+$$
+Y = A \downarrow A = \overline{A}
+$$
+
+### Circuit Steps
+
 1. Connect input `A` to both NOR inputs.
-2. Observe output `Y`.
+2. Take the NOR output as `Y`.
 
-![NOR inverter circuit](image-16.png)
+![NOR inverter circuit](./image-16.png)
 
-### Result
+### Output Table
 
 | A | Y = NOT A |
 |---|-----------|
 | 0 | 1 |
 | 1 | 0 |
 
-![Test result](image-17.png)
+![Test result](./image-17.png)
 
 ### Conclusion
-A NOR gate can act as a NOT gate by joining its two inputs.
+
+A NOR gate works as a NOT gate when its two inputs are connected together.
 
 ---
 
-## Experiment 6: NOT Gate from NAND Gates
+## Experiment 6: NOT Gate Using NAND Gates
 
-### Aim
-Create a NOT gate using a NAND gate.
+### Objective
+
+To implement a NOT gate using a NAND gate.
 
 ### Theory
-If both NAND inputs receive the same value:
 
-\[
-Y=A \text{ NAND } A=\overline{A}
-\]
+When both NAND inputs receive the same signal:
 
-### Procedure
+$$
+Y = A \text{ NAND } A = \overline{A}
+$$
+
+### Circuit Steps
+
 1. Connect input `A` to both NAND inputs.
-2. Check the output.
+2. Observe the output.
 
-![NAND inverter circuit](image-18.png)
+![NAND inverter circuit](./image-18.png)
 
-### Result
+### Output Table
 
 | A | Y = NOT A |
 |---|-----------|
 | 0 | 1 |
 | 1 | 0 |
 
-![Test result](image-19.png)
+![Test result](./image-19.png)
 
 ### Conclusion
-A NAND gate works as an inverter when both inputs are connected together.
+
+A NAND gate can be used as a NOT gate.
 
 ---
 
 ## Experiment 7: Full Adder
 
-### Aim
-Design and test a one-bit full adder.
+### Objective
+
+To design and test a one-bit full adder.
 
 ### Theory
-A full adder adds three one-bit inputs:
 
-- `A`: first input bit
-- `B`: second input bit
-- `Cin`: carry input
+A full adder adds three binary inputs:
 
-It gives two outputs:
+- `A` — first bit
+- `B` — second bit
+- `Cin` — carry input
 
-- `Sum`
-- `Cout`: carry output
+It produces:
 
-The Boolean expressions are:
+- `Sum` — addition result
+- `Cout` — carry output
 
-\[
-Sum=A \oplus B \oplus Cin
-\]
+$$
+Sum = A \oplus B \oplus Cin
+$$
 
-\[
-Cout=AB+Cin(A \oplus B)
-\]
+$$
+Cout = AB + Cin(A \oplus B)
+$$
 
-A full adder can be built from two half adders and one OR gate.
+A full adder can be made with two half adders and one OR gate.
 
-### Procedure
+### Circuit Steps
+
 1. Connect `A` and `B` to the first half adder.
 2. Connect the first sum output and `Cin` to the second half adder.
-3. Join the two carry outputs through an OR gate.
-4. Test all eight input combinations.
+3. Connect both carry outputs to an OR gate.
+4. Test every input combination.
 
-![First half adder](image-20.png)
+![First half adder](./image-20.png)
 
-![Second half adder](image-21.png)
+![Second half adder](./image-21.png)
 
-![Carry OR gate](image-22.png)
+![Carry output connection](./image-22.png)
 
 ### Truth Table
 
 | A | B | Cin | Sum | Cout |
 |---|---|-----|-----|------|
-| 0 | 0 | 0   | 0   | 0 |
-| 0 | 0 | 1   | 1   | 0 |
-| 0 | 1 | 0   | 1   | 0 |
-| 0 | 1 | 1   | 0   | 1 |
-| 1 | 0 | 0   | 1   | 0 |
-| 1 | 0 | 1   | 0   | 1 |
-| 1 | 1 | 0   | 0   | 1 |
-| 1 | 1 | 1   | 1   | 1 |
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 |
 
-![Test result](image-23.png)
+![Test result](./image-23.png)
 
-![Test result](image-24.png)
+![Test result](./image-24.png)
 
-![Test result](image-25.png)
+![Test result](./image-25.png)
 
-![Test result](image-26.png)
+![Test result](./image-26.png)
 
 ### Conclusion
-The full adder produced the correct sum and carry outputs for the tested input values.
+
+The full adder gave correct sum and carry outputs for all tested inputs.
 
 ---
 
-## Experiment 8: Binary to BCD Conversion
+## Experiment 8: Binary to BCD Converter
 
-### Aim
-Convert a 4-bit binary number into Binary-Coded Decimal (BCD).
+### Objective
+
+To convert a four-bit binary number into Binary-Coded Decimal (BCD).
 
 ### Theory
-BCD stores every decimal digit separately in 4-bit binary form. For example:
+
+BCD represents each decimal digit separately using four binary bits.
 
 | Decimal Number | Binary Input | BCD Output |
-|---|---|---|
-| 5  | `0101` | `0101` |
-| 9  | `1001` | `1001` |
+|---:|:---:|:---:|
+| 5 | `0101` | `0101` |
+| 9 | `1001` | `1001` |
 | 10 | `1010` | `0001 0000` |
 | 15 | `1111` | `0001 0101` |
 
-For decimal values `0` to `9`, one BCD digit is sufficient. For values `10` to `15`, two BCD digits are needed: tens and ones.
+For values from `0` to `9`, one BCD digit is enough. Values from `10` to `15` need two BCD digits.
 
-### Procedure
-1. Connect the four binary inputs to the converter circuit.
+### Circuit Steps
+
+1. Connect the four binary input lines to the converter circuit.
 2. Connect the BCD outputs to the display or output indicators.
-3. Test several binary values from `0000` to `1111`.
-4. Compare the displayed decimal value with the expected result.
+3. Change the binary input value and observe the decimal result.
 
-![Binary input circuit](image-27.png)
+![Binary input circuit](./image-27.png)
 
-![BCD output circuit](image-28.png)
+![BCD output circuit](./image-28.png)
 
 ### Example Results
 
 | Binary Input | Decimal Value | BCD Output |
-|---|---:|---|
-| `0000` | 0  | `0000` |
-| `0011` | 3  | `0011` |
-| `1001` | 9  | `1001` |
+|:---:|---:|:---:|
+| `0000` | 0 | `0000` |
+| `0011` | 3 | `0011` |
+| `1001` | 9 | `1001` |
 | `1010` | 10 | `0001 0000` |
 | `1111` | 15 | `0001 0101` |
 
-![Test result](image-29.png)
+![Test result](./image-29.png)
 
-![Test result](image-30.png)
+![Test result](./image-30.png)
 
-![Test result](image-31.png)
+![Test result](./image-31.png)
 
 ### Conclusion
-The circuit converted binary input values to their BCD form. This type of conversion is useful in calculators, digital clocks, and seven-segment displays.
+
+The circuit converted binary values into BCD form. Such converters are commonly used with calculators and digital displays.
 
 ---
 

@@ -94,9 +94,7 @@ $$
 3. Connect both inverted signals to a third NAND gate.
 4. The final output is `A OR B`.
 
-![Input inversion](./image-4.png)
-
-![Final NAND connection](./image-5.png)
+![Final NAND connection](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-25%20235918.png?raw=true)
 
 ### Output Table
 
@@ -147,9 +145,9 @@ $$
 2. Connect `B` to both inputs of the second NOR gate.
 3. Connect both outputs to the last NOR gate.
 
-![Input inversion using NOR](./image-8.png)
+ 
 
-![Final NOR connection](./image-9.png)
+![Final NOR connection](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-25%20235720.png?raw=true)
 
 ### Output Table
 

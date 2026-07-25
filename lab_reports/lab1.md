@@ -47,7 +47,7 @@ $$
 | 1 | 1 | 1 |
 
 
-![Circuit output](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-26%20000154.png?raw=true)
+![Circuit output]()
 
 ### Conclusion
 
@@ -318,11 +318,6 @@ A full adder can be made with two half adders and one OR gate.
 3. Connect both carry outputs to an OR gate.
 4. Test every input combination.
 
-![First half adder](./image-20.png)
-
-![Second half adder](./image-21.png)
-
-![Carry output connection](./image-22.png)
 
 ### Truth Table
 
@@ -337,13 +332,7 @@ A full adder can be made with two half adders and one OR gate.
 | 1 | 1 | 0 | 0 | 1 |
 | 1 | 1 | 1 | 1 | 1 |
 
-![Test result](./image-23.png)
-
-![Test result](./image-24.png)
-
-![Test result](./image-25.png)
-
-![Test result](./image-26.png)
+![Test result]([./image-26.png](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/lab_1/Screenshot%202026-07-26%20000154.png?raw=true)
 
 ### Conclusion
 

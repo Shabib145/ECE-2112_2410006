@@ -49,6 +49,7 @@ _**Heaven’s Light is Our Guide**_
 | Lab No. | Title | Link |
 | :---:   | :---: | :---:|
 | 1       | Introduction to Digital Logic  | [Lab1](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/lab1.md) | 
+| 2       | Boolean operation  | [Lab2](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/lab2.md) | 
 
 </div>
 

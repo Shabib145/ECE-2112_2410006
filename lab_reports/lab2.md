@@ -24,7 +24,7 @@
               = 0
 ## Circuit simulation :
 ![t3](https://github.com/Shabib145/ECE-2112_2410006/blob/main/lab_reports/images/l2/DT_l2_T3.png?raw=true)
-## Task 4 : Simplify F(A,B,C)= (A+(BC)')'(AB + ABC)
+## Task 4 : Simplify F(A,B,C)= (B'(A+B) + (A+B)(A+B'))B'
      F(A,B,C) = (B'(A+B) + (A+B)(A+B'))B'
               =  (AB' + A + AB' + AB)B'
               = (A + AB + AB')B'
